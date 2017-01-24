@@ -173,4 +173,25 @@
 //
 // let s = new Something();  // swapped two lines, because class doesn't hoist
 
-///////////////////////////////////////////////////////////////////
+////////////////////////////////ARROW FUNCTIONS///////////////////////////////////
+
+
+
+const inventory = [
+    {type:   "machine", value: 5000},
+    {type:   "machine", value:  650},
+    {type:      "duck", value:   10},
+    {type: "furniture", value: 1200},
+    {type:   "machine", value:   77}
+];
+
+let totalMachineValue = arr => {
+    arr = inventory;
+    let result = 0;
+    for (let val of arr) {
+        result += val.value;
+    }
+    return result;
+};
+
+console.log(totalMachineValue());
