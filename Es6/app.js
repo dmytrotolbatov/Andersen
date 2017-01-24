@@ -145,24 +145,32 @@
 
 //////////////////////////////////////////////////////////////////////////////
 
-const account = {
-    username: "marijn",
-    password: "xyzzy"
-};
+// const account = {
+//     username: "marijn",
+//     password: "xyzzy"
+// };
+//
+// Object.defineProperties(account, {
+//     username: {
+//         value: "marijn",
+//         configurable: false,
+//         writable: false
+//     },
+//     password: {
+//         value: "xyzzy",
+//         configurable: false,
+//         writable: false
+//     }
+// });
+//
+// account.password = "s3cret"; // (*much* more secure)
+//
+// console.log(account.password); // doesn't change
 
-Object.defineProperties(account, {
-    username: {
-        value: "marijn",
-        configurable: false,
-        writable: false
-    },
-    password: {
-        value: "xyzzy",
-        configurable: false,
-        writable: false
-    }
-});
+//////////////////////////////////////////////////////////////
 
-account.password = "s3cret"; // (*much* more secure)
+// class Something {}
+//
+// let s = new Something();  // swapped two lines, because class doesn't hoist
 
-console.log(account.password); // doesn't change
+///////////////////////////////////////////////////////////////////
