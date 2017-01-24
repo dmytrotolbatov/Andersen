@@ -122,14 +122,23 @@
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-var ids = {
-    next: 0,
-    get(){
-        return this.next++;
-    }
-};
+// var ids = {
+//     next: 0,
+//     get(){
+//         return this.next++;
+//     }
+// };
+//
+// console.log(ids.get());
+// // → 0
+// console.log(ids.get());
+// // → 1
 
-console.log(ids.get());
-// → 0
-console.log(ids.get());
-// → 1
+//////////////////////////////////////BLOCK SCOPE///////////////////////////////
+
+var callbacks = [];
+for (let i = 0; i < 10; i++) {
+    callbacks.push(function() { console.log(i) });
+}
+
+callbacks[2]();
