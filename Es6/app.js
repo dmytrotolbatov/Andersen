@@ -136,9 +136,33 @@
 
 //////////////////////////////////////BLOCK SCOPE///////////////////////////////
 
-var callbacks = [];
-for (let i = 0; i < 10; i++) {
-    callbacks.push(function() { console.log(i) });
-}
+// var callbacks = [];
+// for (let i = 0; i < 10; i++) {
+//     callbacks.push(function() { console.log(i) });
+// }
+//
+// callbacks[2]();
 
-callbacks[2]();
+//////////////////////////////////////////////////////////////////////////////
+
+const account = {
+    username: "marijn",
+    password: "xyzzy"
+};
+
+Object.defineProperties(account, {
+    username: {
+        value: "marijn",
+        configurable: false,
+        writable: false
+    },
+    password: {
+        value: "xyzzy",
+        configurable: false,
+        writable: false
+    }
+});
+
+account.password = "s3cret"; // (*much* more secure)
+
+console.log(account.password); // doesn't change
