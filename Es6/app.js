@@ -1,6 +1,6 @@
 ////////////////////////CLASSES/////////////////////
 
-class Point {
+/*class Point {
     constructor(x, y){
         this.x = x;
         this.y = y;
@@ -12,13 +12,13 @@ class Point {
             y: this.y + point.y
         }
     }
-}
+}*/
 
 //console.log(new Point(1, 2).plus(new Point(2, 1)));
 
 //////////////////////////////////////////////////////////////////
 
-class Speaker {
+/*class Speaker {
     constructor(name, verb){
         this.name = name;
         this.verb = verb || 'says'
@@ -35,14 +35,14 @@ class Shouter extends Speaker{
     speak(text){
         super.speak(text.toUpperCase());
     }
-}
+}*/
 
 //new Shouter("Dr. Loudmouth").speak("hello there");
 //new Speaker("Dr. Loudmouth").speak("hello there");
 
 ////////////////////////////////////////////////////////////////////
 
-class Speaker2 {
+/*class Speaker2 {
     constructor(name, verb){
         this.name = name;
         this._verb = verb || 'says'
@@ -68,4 +68,53 @@ class Shouter2 extends Speaker2{
     speak(text){
         super.speak(text.toUpperCase());
     }
+}*/
+
+///////////////////////////////////////OBJECT LITERALS//////////////////////////////////
+
+/*class Point {
+    constructor(x, y) {
+        this.x = x;
+        this.y = y;
+    }
+    add(other) {
+        return new Point(this.x + other.x, this.y + other.y)
+    }
 }
+
+var test = new Point(2, 3);
+console.log(test);
+
+var fakePoint = {
+
+    constructor: function (x, y) {
+        this.x = x;
+        this.y = y;
+    },
+    add: function (other) {
+        return function () {
+            return {0: sumX, 1: sumY}
+        }
+    }
+};
+console.log(fakePoint);
+
+console.log(fakePoint instanceof Point);*/
+
+/////////////////////////////////////////////////////////////////////////
+
+function startNode(type, value, options) {
+    return {
+        type,
+        value,
+        [options.sourceProperty]: options.sourceValue
+    }
+}
+
+console.log(startNode("Identifier", "foo", {
+    sourceProperty: "src",
+    sourceValue: "bar.js"
+}));
+// → {type: "Identifier",
+//    value: "foo",
+//    src: "bar.js"}
