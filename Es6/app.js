@@ -177,21 +177,54 @@
 
 
 
-const inventory = [
-    {type:   "machine", value: 5000},
-    {type:   "machine", value:  650},
-    {type:      "duck", value:   10},
-    {type: "furniture", value: 1200},
-    {type:   "machine", value:   77}
-];
+// const inventory = [
+//     {type:   "machine", value: 5000},
+//     {type:   "machine", value:  650},
+//     {type:      "duck", value:   10},
+//     {type: "furniture", value: 1200},
+//     {type:   "machine", value:   77}
+// ];
 
-let totalMachineValue = arr => {
-    arr = inventory;
-    let result = 0;
-    for (let val of arr) {
-        result += val.value;
-    }
-    return result;
-};
+// let totalMachineValue = arr => {
+//     arr = inventory;
+//     let result = 0;
+//     for (let val of arr) {
+//         result += val.value;
+//     }
+//     return result;
+// };
+//
+// console.log(totalMachineValue());
 
-console.log(totalMachineValue());
+///////////////////////////////////////////////////////////////
+
+
+// class SortedArray {        // takes numbers and then returns sorted array
+//     constructor () {
+//         this._content = [];
+//     }
+//     set content (el) {
+//         this._content.push(el);
+//     }
+//     get content () {
+//         let compare = (a, b) => {
+//             return a - b;
+//         };
+//
+//         return this._content.sort(compare);
+//     }
+//
+// }
+//
+// var sorted = new SortedArray();
+// sorted.content = 5;
+// sorted.content = 3;
+// sorted.content = 2;
+// sorted.content = 4;
+// sorted.content = 1;
+//
+// console.log(sorted.content);
+
+
+//////////////////////////////////////////////////////////////////////////////////////
+
