@@ -323,4 +323,78 @@
 //         .replace(/>/g, "&gt;").replace(/&/g, "&amp;");
 // }
 
-//////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////MAP & SET//////////////////////////////////////////////////
+
+// Generate a random graph
+// const graph = [];
+// for (let i = 0; i < 50; i++)
+//     graph.push({value: Math.random(), edges: []})
+// for (let i = 0; i < 100; i++) {
+//     let from = graph[Math.floor(Math.random() * graph.length)];
+//     let to   = graph[Math.floor(Math.random() * graph.length)];
+//     if (from.edges.indexOf(to) != -1) continue;
+//     from.edges.push(to)
+// }
+//
+// function connectedValue(node) {
+//     /*let set = new Set([node]);
+//      let result = 0;
+//      set.forEach(function (val) {
+//      result += val.value;
+//      });
+//
+//      console.log(set);*/
+//
+//     let result = 0;
+//     let set = new Set();
+//
+//     console.log(Object.values(node));
+//
+//
+//     return result;
+// }
+//
+// console.log(graph);
+//  console.log(connectedValue(graph[0]));
+// console.log(connectedValue(graph[24]));
+// console.log(connectedValue(graph[49]));
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+// class MyMap {
+//     constructor () {
+//         this.obj = {};
+//     }
+//     set (key, value){
+//         this.obj[key] = value;
+//     }
+//     get (key){
+//         return this.obj[key];
+//     }
+//     delete (key){
+//         delete this.obj[key];
+//     }
+//     get size() {
+//         return Object.keys(this.obj).length;
+//     }
+//     clear (){
+//         this.obj = {};
+//         console.log(this.obj);
+//     }
+// }
+//
+// const names = new MyMap;
+// names.set(Array, "the array constructor");
+// names.set(Math, "the math object");
+// console.log(names.get(Array));
+// // → "the array constructor"
+// console.log(names.size);
+// // → 2
+// names.delete(Array);
+// console.log(names.get(Array));
+// // → undefined
+// names.clear();
+// console.log(names.get(Math));
+// // → undefined
+
+//////////////////////////////////////////////////////////////////////////
