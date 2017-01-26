@@ -397,4 +397,94 @@
 // console.log(names.get(Math));
 // // → undefined
 
-//////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////PROMISES//////////////////////////////////////
+
+// function get(url) {
+//     return new Promise((succeed, fail) => {
+//         var req = new XMLHttpRequest();
+//         req.open("GET", url, true);
+//         req.addEventListener("load", () => {
+//             if (req.status < 400)
+//                 succeed(req.responseText);
+//             else
+//                 fail(new Error("Request failed: " + req.statusText))
+//         });
+//         req.addEventListener("error", () => {
+//             fail(new Error("Network error"))
+//         });
+//         req.send(null);
+//     })
+// }
+//
+// get('http://marijnhaverbeke.nl');
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+// function all(promises) {
+//     return new Promise(function(success, fail) {
+//         // Your code here.
+//     });
+// }
+//
+// // Test code.
+// all([]).then(function(array) {
+//     console.log("This should be []:", array);
+// });
+// function soon(val) {
+//     return new Promise(function(success) {
+//         setTimeout(function() { success(val); },
+//             Math.random() * 500);
+//     });
+// }
+// all([soon(1), soon(2), soon(3)]).then(function(array) {
+//     console.log("This should be [1, 2, 3]:", array);
+// });
+// function fail() {
+//     return new Promise(function(success, fail) {
+//         fail(new Error("boom"));
+//     });
+// }
+// all([soon(1), fail(), soon(3)]).then(function(array) {
+//     console.log("We should not get here");
+// }, function(error) {
+//     if (error.message != "boom")
+//         console.log("Unexpected failure:", error);
+// });
+
+///////////////////////////////SYMBOLS///////////////////////////////////////
+
+let compose = Symbol();
+Function.prototype[compose] = function (el) {
+
+    var result1 = this;
+    var result2 = el;
+    return function (result) {
+        result = result2.call(this, result);
+        result = result1.call(this, result);
+        return result;
+    };
+};
+
+let roundedAbs = Math.round[compose](Math.abs);
+console.log(roundedAbs(-5.5));
+
+//////////////////////////////////////////////////////////////////////////////////
+
+// class Queue {
+//     constructor() {
+//         [Symbol.for('content')] = [];
+//         //this._content = []
+//     }
+//     put(elt) {
+//         return this.content.push(elt)
+//     }
+//     take() {
+//         return this.content.shift()
+//     }
+// }
+//
+// let q = new Queue;
+// q.put(1);
+// q.put(2);
+// console.log(q.take());
+// console.log(q.take());
