@@ -453,38 +453,38 @@
 
 ///////////////////////////////SYMBOLS///////////////////////////////////////
 
-let compose = Symbol();
-Function.prototype[compose] = function (el) {
-
-    var result1 = this;
-    var result2 = el;
-    return function (result) {
-        result = result2.call(this, result);
-        result = result1.call(this, result);
-        return result;
-    };
-};
-
-let roundedAbs = Math.round[compose](Math.abs);
-console.log(roundedAbs(-5.5));
+// let compose = Symbol();
+// Function.prototype[compose] = function (el) {
+//
+//     var result1 = this;
+//     var result2 = el;
+//     return function (result) {
+//         result = result2.call(this, result);
+//         result = result1.call(this, result);
+//         return result;
+//     };
+// };
+//
+// let roundedAbs = Math.round[compose](Math.abs);
+// console.log(roundedAbs(-5.5));
 
 //////////////////////////////////////////////////////////////////////////////////
 
-// class Queue {
-//     constructor() {
-//         [Symbol.for('content')] = [];
-//         //this._content = []
-//     }
-//     put(elt) {
-//         return this.content.push(elt)
-//     }
-//     take() {
-//         return this.content.shift()
-//     }
-// }
-//
-// let q = new Queue;
-// q.put(1);
-// q.put(2);
-// console.log(q.take());
-// console.log(q.take());
+let content = Symbol();
+class Queue {
+    constructor() {
+        this[content] = [];
+    }
+    put(elt) {
+        return this[content].push(elt);
+    }
+    take() {
+        return this[content].shift();
+    }
+}
+
+let q = new Queue;
+q.put(1);
+q.put(2);
+console.log(q.take());
+console.log(q.take());
