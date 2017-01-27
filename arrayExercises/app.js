@@ -141,4 +141,117 @@
 //
 // printer(a);
 
-///////////////////////////////////////////////////////////////////////////
+//////////////////////////////////ELEVEN/////////////////////////////////////////
+
+// function sum_sq(array) {
+//     var result = 0;
+//     array.forEach(function (el) {
+//         result += Math.pow(el, 2);
+//     });
+//     return result;
+// }
+//
+// console.log(sum_sq([0,1,2,3,4]));
+
+/////////////////////////////////////TWELVE////////////////////////////////////////////////////
+
+// function sumProduct(arr) {
+//     var sum = 0;
+//     var product = 1;
+//     arr.forEach(function (el) {
+//         sum += el;
+//         product *= el;
+//     });
+//     return `Sum: ${sum} Product: ${product}`;
+// }
+//
+// var array = [1, 2, 3, 4, 5, 6];
+//
+//
+// console.log(sumProduct(array));
+
+//////////////////////////////////////THIRTEEN///////////////////////////////////////////
+
+// var arr = [];
+//
+// function createField() {
+//     var body = document.body;
+//     var input = document.createElement('input');
+//     var addButton = document.createElement('button');
+//     var displayButton = document.createElement('button');
+//     var button1Text = document.createTextNode('Add');
+//     var button2Text = document.createTextNode('Display');
+//
+//     addButton.appendChild(button1Text);
+//     displayButton.appendChild(button2Text);
+//     addButton.setAttribute('id', 'add');
+//     displayButton.setAttribute('id', 'display');
+//     input.setAttribute('id', 'input');
+//
+//     body.appendChild(input);
+//     body.appendChild(addButton);
+//     body.appendChild(displayButton);
+// }
+//
+// function list() {
+//     document.getElementById('add').onclick = function () {
+//         var text = document.getElementById('input').value;
+//         arr.push(text);
+//         console.log(arr);
+//     };
+//
+//     document.getElementById('display').onclick = function () {
+//         var ul = document.createElement('ul');
+//         document.body.appendChild(ul);
+//
+//         for (var i = 0; i < arr.length; i++){
+//             var li = document.createElement('li');
+//             ul.appendChild(li);
+//             ul.lastChild.innerHTML = `Element ${i} = ${arr[i]}`;
+//         }
+//     }
+// }
+//
+// createField();
+// list();
+
+//////////////////////////////////////FOURTEEN//////////////////////////////////////////////
+
+// function removeDuplicates(num) {
+//     var arr = [];
+//     var obj = {};
+//
+//     num.forEach(function (el) {
+//         obj[el] = 1;
+//     });
+//
+//     for (var key in obj) {
+//         arr.push(key)
+//     }
+//
+//     return arr;
+// }
+//
+// var Mynum = [1, 2, 2, 4, 5, 4, 7, 8, 7, 3, 6];
+// var result = removeDuplicates(Mynum);
+// console.log(Mynum);
+// console.log(result);
+
+/////////////////////////////////FIFTEEN//////////////////////////////////////////////////////
+
+// o = ["th","st","nd","rd"];
+// var color = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
+//
+// function coloursInOrder(arr) {
+//     console.log(`1${o[1]} choice is ${arr[0]}`);
+//     console.log(`2${o[2]} choice is ${arr[1]}`);
+//     console.log(`3${o[3]} choice is ${arr[2]}`);
+//     for (var i = 3; i < arr.length; i++){
+//         console.log(`${i + 1}${o[0]} choice is ${arr[i]}`);
+//     }
+// }
+//
+// coloursInOrder(color);
+
+
+
