@@ -398,25 +398,70 @@
 // // → undefined
 
 /////////////////////////////////////////PROMISES//////////////////////////////////////
-
+// var arr = [];
+// var arr1 = [1,2,3,4,5,6,7];
+// function main() {
+//     // for (var i = 0; i < arr.length; i++){
+//     //     console.log( get(arr[i]) );
+//     // }
+//     console.log(arr['1']);
+//
+//     // arr.forEach((url) => get(url));
+//
+//     console.log(arr);
+// }
+//
 // function get(url) {
 //     return new Promise((succeed, fail) => {
 //         var req = new XMLHttpRequest();
 //         req.open("GET", url, true);
 //         req.addEventListener("load", () => {
-//             if (req.status < 400)
-//                 succeed(req.responseText);
-//             else
-//                 fail(new Error("Request failed: " + req.statusText))
+//                 if (req.status < 400) {
+//                     if (url == 'http://marijnhaverbeke.nl'){
+//                         // var test = findHref(req.responseText, url);
+//                         arr.push(...findHref(req.responseText, url));
+//                         // console.log(typeof test,'test');
+//                         // console.log(typeof arr,'arr');
+//
+//                     }
+//                     // arr.forEach((url) => get(url));
+//                     // console.log(arr);
+//                      console.log(req.responseText);
+//                     // console.log(findHref(req.responseText, url));
+//
+//                     succeed(req.responseText)
+//                 }
+//                 else
+//                     fail(new Error("Request failed: " + req.statusText))
+//
+//
 //         });
 //         req.addEventListener("error", () => {
 //             fail(new Error("Network error"))
 //         });
-//         req.send(null);
+//         req.send(null)
 //     })
 // }
 //
-// get('http://marijnhaverbeke.nl');
+// function findHref(str, url) {
+//     // str = get('http://marijnhaverbeke.nl');
+//     var reg = /href="[^http].+"/g;
+//     var hrefs = str.match(reg);
+//     return hrefs.map((href) => {
+//         let currentStr = href.replace('href="', '');
+//         currentStr = currentStr.replace('"', '');
+//         currentStr = currentStr.replace('//', '/');
+//         return url + '/'+currentStr ;
+//     });
+//     // console.log(hrefs);
+//     // return hrefs;
+//     // console.log(str);
+// }
+// get('http://marijnhaverbeke.nl').then(main());
+// console.log(get('http://marijnhaverbeke.nl'));
+// console.log(main());
+// main();
+
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -470,21 +515,50 @@
 
 //////////////////////////////////////////////////////////////////////////////////
 
-let content = Symbol();
-class Queue {
-    constructor() {
-        this[content] = [];
-    }
-    put(elt) {
-        return this[content].push(elt);
-    }
-    take() {
-        return this[content].shift();
-    }
-}
+// let content = Symbol();
+// class Queue {
+//     constructor() {
+//         this[content] = [];
+//     }
+//     put(elt) {
+//         return this[content].push(elt);
+//     }
+//     take() {
+//         return this[content].shift();
+//     }
+// }
+//
+// let q = new Queue;
+// q.put(1);
+// q.put(2);
+// console.log(q.take());
+// console.log(q.take());
 
-let q = new Queue;
-q.put(1);
-q.put(2);
-console.log(q.take());
-console.log(q.take());
+/////////////////////////////////////////ITERATORS////////////////////////////////////////////////////////
+
+// class List {
+//     constructor(head, tail) {
+//         this.head = head;
+//         this.tail = tail;
+//     }
+//
+//     map(f) {
+//         return new List(f(this.head), this.tail && this.tail.map(f));
+//     }
+//     [Symbol.iterator]() { return this.head.values() }
+//
+//     /*[Symbol.iterator]() {
+//         return {
+//             next: function () {
+//                 return this.head;
+//             }
+//         }
+//     }*/
+// }
+//
+// let list = new List("x", new List("y", new List("z", null)));
+//
+// for (let elt of list) console.log(elt)
+// // → x
+// //   y
+// //   z
