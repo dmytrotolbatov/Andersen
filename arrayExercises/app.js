@@ -346,3 +346,141 @@
 // var arr = [1, 2, -2, 4, 5, 4, 7, 8, 7, 7, 71, 3, 6];
 // console.log(find_duplicate_in_array(arr));
 
+///////////////////////////////////////TWENTY ONE////////////////////////////////////////////
+
+// function diveInArray(arr, flag, result) {
+//     if (!result){
+//         result = [];
+//     }
+//
+//     if (flag) {
+//         return result.concat(...arr);
+//     }
+//
+//     for (var i = 0; i < arr.length; i++){
+//         if (Array.isArray(arr[i])){
+//             diveInArray(arr[i], flag, result);
+//         }else {
+//             result.push(arr[i]);
+//         }
+//     }
+//     return result;
+// }
+//
+// console.log(diveInArray([1, [2], [3, [[4]]],[5,6]]));
+//
+// console.log(diveInArray([1, [2], [3, [[4]]],[5,6]], true));
+
+///////////////////////////////////tWENTY TWO//////////////////////////////////
+
+// /*
+// function union(arr1, arr2) {
+//     var obj = {};
+//     var result = [];
+//
+//     for (var i = 0; i < arr1.length; i++){
+//         obj[arr1[i]] = 1;
+//     }
+//
+//     for (var i = 0; i < arr2.length; i++){
+//         obj[arr2[i]] = 1;
+//     }
+//
+//     for (var key in obj){
+//         result.push(+key);
+//     }
+//     return result;
+//
+// }
+//
+// console.log(union([1, 2, 3], [100, 2, 1, 10]));*/
+
+///////////////////////////////////////////TWENTY THREE//////////////////////////////////
+
+// function diveInArray(arr, flag, result) {
+//     if (!result){
+//         result = [];
+//     }
+//
+//     if (flag) {
+//         return result.concat(...arr);
+//     }
+//
+//     for (var i = 0; i < arr.length; i++){
+//         if (Array.isArray(arr[i])){
+//             diveInArray(arr[i], flag, result);
+//         }else {
+//             result.push(arr[i]);
+//         }
+//     }
+//     return result;
+// }
+//
+// function difference(arr1, arr2) {
+//     var result = [];
+//
+//     var num1 = diveInArray(arr1, true);
+//     var num2 = diveInArray(arr2, true);
+//
+//     var obj = {};
+//     for (var i = 0; i < num1.length; i++){
+//         obj[num1[i]] = false;
+//     }
+//     for (i = 0; i < num2.length; i++){
+//         if (obj[num2[i]] === false) {
+//             delete obj[num2[i]];
+//         }
+//         else {
+//             obj[num2[i]] = true;
+//         }
+//     }
+//
+//     for (var key in obj)
+//         result.push(key);
+//     return result;
+// }
+//
+// console.log(difference([1, 2, 3], [100, 2, 1, 10])); // ["3", "10", "100"]
+// console.log(difference([1, 2, 3, 4, 5], [1, [2], [3, [[4]]],[5,6]])); // ["6"]
+// console.log(difference([1, 2, 3], [100, 2, 1, 10])); // ["3", "10", "100"]
+
+//////////////////////////////////////////TWENTY FOUR//////////////////////////////////////
+
+// function clean(arr) {
+//     var index = 0,
+//         index2 = 0,
+//         result = [];
+//
+//     while (index++ < arr.length) {
+//         if (arr[index]) {
+//             result[index2++] = arr[index];
+//         }
+//     }
+//
+//     return result;
+// }
+//
+// var test = [NaN, 0, 15, false, -22, '', undefined, 47, null];
+//
+// console.log(clean(test));
+
+/////////////////////////////////////TWENTY FIVE//////////////////////////////////////////
+
+// function sortBooks(a, b) {
+//     if (a.title < b.title)
+//         return -1;
+//     if (a.title > b.title)
+//         return 1;
+//     return 0;
+// }
+//
+// var library = [
+//     { author: 'Bill Gates', title: 'The Road Ahead', libraryID: 1254},
+//     { author: 'Steve Jobs', title: 'Walter Isaacson', libraryID: 4264},
+//     { author: 'Suzanne Collins', title: 'Mockingjay: The Final Book of The Hunger Games', libraryID: 3245}
+// ];
+//
+// console.log(library.sort(sortBooks));
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
