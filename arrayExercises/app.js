@@ -253,5 +253,96 @@
 //
 // coloursInOrder(color);
 
+/////////////////////////////////////SIXTEEN////////////////////////////////////////////////////////
 
+// function leap_year_range(start, end) {
+//     var arrOfYears = [];
+//     for (var i = start; i <= end; i++){
+//         if (testYear(i)){
+//             arrOfYears.push(i);
+//         }
+//
+//     }
+//     return arrOfYears;
+// }
+//
+// function testYear(year) {
+//     if ((year % 4 === 0 && year % 100 !== 0) || (year % 100 === 0 && year % 400 === 0)) {
+//         return true;
+//     }
+// }
+//
+// console.log(leap_year_range(2000,2012));
+
+//////////////////////////////////////////SEVENTEEN////////////////////////////////////////
+
+// function shuffle(arr) {
+//     var helper;
+//     var randomIndex = Math.floor(Math.random() * (arr.length - 1));
+//
+//     for (var i = 0; i < arr.length; i++){
+//         helper = arr[i];
+//         arr[i] = arr[randomIndex];
+//         arr[randomIndex] = helper;
+//     }
+//     return arr;
+// }
+// var myArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+// console.log(shuffle(myArray));
+
+/////////////////////////////////////////EIGHTEEN//////////////////////////////////////////////////////
+
+// function binarySearch(arr, el) {
+//     return arr.indexOf(el);
+// }
+//
+// var items = [1, 2, 3, 4, 5, 7, 8, 9];
+//
+// console.log(binarySearch(items, 1)); //0
+// console.log(binarySearch(items, 5)); //4
+
+//////////////////////////////////NINETEEN/////////////////////////////////////////////////
+
+// function sunOfArr(arr1, arr2) {
+//     var result = [];
+//     var max = Math.max(arr1.length, arr2.length);
+//
+//     for (var i = 0; i < max; i++){
+//         if (arr1[i] != null && arr2[i] != null){
+//             result.push(arr1[i] + arr2[i]);
+//         }
+//     }
+//
+//     if (result.length < arr1.length){
+//         result = result.concat(arr1.slice(result.length, arr1.length));
+//     }else if (result.length < arr2.length){
+//         result = result.concat(arr2.slice(result.length, arr2.length));
+//     }
+//     return result;
+// }
+//
+// array1 = [1,0,2,3,4];
+// array2 = [3,5,6,7,8,13];
+//
+// console.log(sunOfArr(array1, array2));
+
+//////////////////////////////////////TWENTY//////////////////////////////////////////////////
+
+// function find_duplicate_in_array(array) {
+//
+//     var arr = [];
+//     var obj = {};
+//
+//     array.forEach(function (el) {
+//         obj[el] = 1;
+//     });
+//
+//     for (var key in obj) {
+//         arr.push(key)
+//     }
+//
+//     return arr;
+// }
+// var arr = [1, 2, -2, 4, 5, 4, 7, 8, 7, 7, 71, 3, 6];
+// console.log(find_duplicate_in_array(arr));
 
