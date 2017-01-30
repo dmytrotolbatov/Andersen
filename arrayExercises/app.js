@@ -627,12 +627,12 @@
 
 //////////////////////////////////////////////////THIRTY FOUR/////////////////////////////////////////////////////////
 
-function nthlargest(arr, el) {
-    var array = arr.slice(0, el);
-    return Math.max(...array);
-}
-
-console.log(nthlargest([ 43, 56, 23, 89, 88, 90, 99, 652], 4));
+// function nthlargest(arr, el) {
+//     var array = arr.slice(0, el);
+//     return Math.max(...array);
+// }
+//
+// console.log(nthlargest([ 43, 56, 23, 89, 88, 90, 99, 652], 4));
 
 //////////////////////////////////////////////////THIRTY FIVE////////////////////////////////////////////////////
 
@@ -644,3 +644,85 @@ console.log(nthlargest([ 43, 56, 23, 89, 88, 90, 99, 652], 4));
 // var items = [254, 45, 212, 365, 2543];
 // console.log(getRandom(items));
 
+/////////////////////////////////////////////////THIRTY SIX//////////////////////////////////////////////////////
+
+// function array_filled(quantity, el) {
+//     var result = [];
+//     for (var i = 0; i < quantity; i++){
+//         result.push(el);
+//     }
+//     return result;
+// }
+//
+// console.log(array_filled(6, 0));
+// console.log(array_filled(4, 11));
+
+///////////////////////////////////////////////////THIRTY SEVEN//////////////////////////////////////////////////
+
+// function array_filled2(quantity, el) {
+//     var result = [];
+//     for (var i = 0; i < quantity; i++){
+//         result.push(el);
+//     }
+//     return result;
+// }
+//
+// console.log(array_filled2(3, 'default value'));
+// console.log(array_filled2(4, 'password'));
+
+//////////////////////////////////////////////////THIRTY EIGHT/////////////////////////////////////////////////////
+
+// function move(arr, from, to) {
+//     if (from < 0) {
+//         from = arr.length + from;
+//         to = arr.length + to;
+//     }
+//     var item = arr[from];
+//     arr.splice(from, 1);
+//     arr.splice(to, 0, item);
+//     return arr;
+// }
+//
+// console.log(move([10, 20, 30, 40, 50], 0, 2));
+// console.log(move([10, 20, 30, 40, 50], -1, -2));
+
+////////////////////////////////////////////THIRTY NINE///////////////////////////////////////////////////////////////
+
+// function clean(arr) {
+//     var result = [];
+//     for (var i = 0; i < arr.length; i++){
+//         if (arr[i]){
+//             result.push(arr[i]);
+//         }
+//     }
+//     return result;
+// }
+//
+// console.log(clean([58, '', 'abcd', true, null, false, 0]));
+
+////////////////////////////////////////////////FORTY////////////////////////////////////////////////////////////////
+
+// function array_range(el, length) {
+//     var result = [];
+//     for (var i = 0; i < length; i++) {
+//         result.push(el);
+//         el++;
+//     }
+//     return result;
+// }
+//
+// console.log(array_range(1, 4));
+// console.log(array_range(-6, 4));
+
+////////////////////////////////////////////////////FORTY-ONE////////////////////////////////////////////////////////////
+
+// function rangeBetween(start, end) {
+//     var result = [];
+//     for (var i = start; i <= end; i++, start++) {
+//         result.push(start);
+//     }
+//     return result;
+// }
+//
+// console.log(rangeBetween(4, 7));
+// console.log(rangeBetween(-4, 7));
