@@ -482,5 +482,111 @@
 //
 // console.log(library.sort(sortBooks));
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////TWENTY SIX//////////////////////////////////////////////////////////////
 
+// function twoSum(numbers, target) {
+//     var result = [];
+//     for (var i = 0; i < numbers.length; i++){
+//         for (var j = 1; j < numbers.length; j++){
+//             if (numbers[i] + numbers[j] == target){
+//                 result.push(numbers.indexOf(numbers[i]));
+//                 result.push(numbers.indexOf(numbers[j]));
+//                 return result;
+//             }
+//         }
+//     }
+//     return undefined;
+// }
+// console.log(twoSum([10,20,10,40,50,60,70],50));
+
+////////////////////////////////////////////////TWENTY SEVEN///////////////////////////////////////////////////////////
+
+// function clean(arr) {
+//     var index = 0,
+//         index2 = 0,
+//         result = [];
+//
+//     while (index++ < arr.length) {
+//         if (arr[index]) {
+//             result[index2++] = arr[index];
+//         }
+//     }
+//
+//     return result;
+// }
+//
+// var test = [NaN, 0, 15, false, -22, '', undefined, 47, null];
+//
+// console.log(clean(test));
+
+/////////////////////////////////////////////////////TWENTY EIGHT///////////////////////////////////////////////////
+
+// function maxCommonString(arr) {
+//     var word1 = arr[0].length;
+//     var word2 = arr[1].length;
+//     var max = Math.max(word1, word2);
+//     var result = [];
+//     for (var i = 0; i < max; i++){
+//         if (arr[0][i] === arr[1][i]) {
+//             result.push(arr[0][i]);
+//         }else if(arr[0][i] != arr[1][i] && result.length > 0){
+//             return result.join('');
+//         }
+//     }
+//     return result.join('');
+// }
+//
+// console.log(maxCommonString(['go', 'google']));
+
+/////////////////////////////////////////////////////////TWENTY NINE//////////////////////////////////////////////////
+
+// function num_string_range(start, end, step) {
+//     var result = [];
+//
+//     if (end < start) {
+//         step = -step;
+//     }
+//
+//     if (typeof start == "number") {
+//         while (step > 0 ? end >= start : end <= start) {
+//             result.push(start);
+//             start += step;
+//         }
+//     }else if (typeof start == "string") {
+//         start = start.charCodeAt(0);
+//         end = end.charCodeAt(0);
+//
+//         while (step > 0 ? end >= start : end <= start) {
+//             result.push(String.fromCharCode(start));
+//             start += step;
+//         }
+//     }
+//
+//     return result;
+// }
+// console.log(num_string_range('a', "z", 2));
+// console.log(num_string_range("Z", "A", 2));
+// console.log(num_string_range(0, -5, 1));
+// console.log(num_string_range(0, 25, 5));
+// console.log(num_string_range(20, 5, 5));
+
+////////////////////////////////////////////////////THIRTY//////////////////////////////////////////////////
+
+// function merge_array(arr1, arr2) {
+//     var newArr1 = arr1.slice();
+//     arr1.forEach(function (el) {
+//         for (var i = 0; i < arr2.length; i++){
+//             if (el === arr2[i]) {
+//                 var index = newArr1.indexOf(el);
+//                 newArr1.splice(index, 1);
+//             }
+//         }
+//     });
+//     return newArr1.concat(arr2);
+// }
+//
+// var array1 = [1, 2, 3];
+// var array2 = [2, 30, 1];
+// console.log(merge_array(array1, array2));
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
