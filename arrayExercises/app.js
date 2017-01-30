@@ -589,4 +589,58 @@
 // var array2 = [2, 30, 1];
 // console.log(merge_array(array1, array2));
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////THIRTY ONE//////////////////////////////////////////////////////////
+
+// function remove_array_element(arr, el) {
+//     var index = arr.indexOf(el);
+//     arr.splice(index, 1);
+//     return arr;
+// }
+//
+// console.log(remove_array_element([2, 5, 9, 6], 5));
+
+/////////////////////////////////////////////////THIRTY TWO//////////////////////////////////////////////////////////
+
+// function hasElement(arr, el) {
+//     for (var i = 0; i < arr.length; i++) {
+//         if (arr[i] == el) {
+//             return true;
+//         }else if (i == arr.length - 1){
+//             return false;
+//         }
+//     }
+// }
+//
+// console.log(hasElement([2, 5, 9, 6], 5));
+
+///////////////////////////////////////////////THIRTY THREE////////////////////////////////////////////////////////////
+
+// function empty(arr) {
+//     var result = arr.slice();
+//     result.splice(0, result.length);
+//     return result;
+// }
+//
+// arr = [1, 3, 6, 3, -5];
+// console.log(empty(arr));
+// console.log(arr);
+
+//////////////////////////////////////////////////THIRTY FOUR/////////////////////////////////////////////////////////
+
+function nthlargest(arr, el) {
+    var array = arr.slice(0, el);
+    return Math.max(...array);
+}
+
+console.log(nthlargest([ 43, 56, 23, 89, 88, 90, 99, 652], 4));
+
+//////////////////////////////////////////////////THIRTY FIVE////////////////////////////////////////////////////
+
+// function getRandom(arr) {
+//     var index = Math.floor(Math.random() * arr.length);
+//     return arr[index];
+// }
+//
+// var items = [254, 45, 212, 365, 2543];
+// console.log(getRandom(items));
+
