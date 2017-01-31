@@ -536,29 +536,97 @@
 
 /////////////////////////////////////////ITERATORS////////////////////////////////////////////////////////
 
-// class List {
-//     constructor(head, tail) {
-//         this.head = head;
-//         this.tail = tail;
-//     }
-//
-//     map(f) {
-//         return new List(f(this.head), this.tail && this.tail.map(f));
-//     }
-//     [Symbol.iterator]() { return this.head.values() }
-//
-//     /*[Symbol.iterator]() {
-//         return {
-//             next: function () {
-//                 return this.head;
-//             }
-//         }
-//     }*/
+class List {
+    constructor(head, tail) {
+        this.head = head;
+        this.tail = tail;
+    }
+
+    map(f) {
+        return new List(f(this.head), this.tail && this.tail.map(f));
+    }
+
+    [Symbol.iterator]() {
+        let index = 0;
+        let currenTail = this;
+        return {
+                next: () => {
+                if (currentTail) {
+                    let value = currentTail.head;
+                    currentTail = this.tail;
+            index++;
+            return {
+                done: false,
+                value
+            };
+        }else {
+            return{
+                done: true
+            };
+        }
+    }
+    }
+    }
+}
+
+let list = new List("x", new List("y", new List("z", null)));
+
+for (let elt of list) console.log(elt)
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// function integers() {
+//     let i = 0
+//     return {next() { return {value: i++} },
+//         [Symbol.iterator]() { return this }}
 // }
 //
-// let list = new List("x", new List("y", new List("z", null)));
+// function take(n, iter) {
+//     var index = 0;
+//     return {
+//         next() {
+//             if (index < n) {
+//                 index++
+//                 return {
+//                     done: false,
+//                     value: iter.next().value
+//                 }
+//             }else {
+//                 return {
+//                     done: true
+//                 }
+//             }
 //
-// for (let elt of list) console.log(elt)
-// // → x
-// //   y
-// //   z
+//         },
+//         [Symbol.iterator]() { return this }
+//     }
+// }
+//
+// for (let elt of take(3, integers()))
+//     console.log(elt)
+// → 0
+//   1
+//   2
+
+///////////////////////////////////////////////////GENERATORS//////////////////////////////////////////////////////////
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// function* integers() {
+//     for (let i = 0;; i++) yield i
+// }
+//
+// function* take(n, iter) {
+//     for (var i = 0; i < n; i++) {
+//         yield iter.next().value;
+//     }
+//
+// }
+//
+// for (let elt of take(3, integers()))
+//     console.log(elt)
+// → 0
+//   1
+//   2
