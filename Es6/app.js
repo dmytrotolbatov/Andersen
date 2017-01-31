@@ -548,16 +548,16 @@ class List {
 
     [Symbol.iterator]() {
         let index = 0;
-        let currenTail = this;
+        let currentTail = this;
         return {
                 next: () => {
-                if (currentTail) {
-                    let value = currentTail.head;
-                    currentTail = this.tail;
+                if (index < 3) {
             index++;
+            var value = currentTail.head;
+            currentTail = this.tail;
             return {
                 done: false,
-                value
+                value: this.map
             };
         }else {
             return{

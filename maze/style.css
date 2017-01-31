@@ -1,0 +1,40 @@
+body {
+    text-align: center;
+}
+.all-border {
+    width: 105px;
+    height: 42px;
+    border-bottom: solid 1px;
+    border-left: solid 1px;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    /*float: left;*/
+    background: #cac771;
+    border: solid 1px;
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
+
+.row {
+    display: block;
+    margin: 0;
+    line-height: 0;
+}
+
+.noRightWall {
+    border-right: 1px #cac771 solid;
+}
+
+.noTopWall {
+    border-top: 1px #cac771 solid;
+}
+
+#land {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+}
