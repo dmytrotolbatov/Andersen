@@ -1,0 +1,264 @@
+[
+  {
+    "id": 1,
+    "picture": "https://priparade.ru/image/catalog/tovar/2500-2999/2638/2638-1.jpg",
+    "name": "Эстафета \"Отдыхаем на природе\"",
+    "price": "$217.31",
+    "isActiveSale": false,
+    "sale": 3
+  },
+  {
+    "id": 2,
+    "picture": "https://priparade.ru/image/catalog/tovar/4000-4499/4052/4052-1.jpg",
+    "name": "Кошелек женский \"Fray\" арт:4052",
+    "price": "$930.84",
+    "isActiveSale": false,
+    "sale": 63
+  },
+  {
+    "id": 3,
+    "picture": "https://priparade.ru/image/cache/catalog/tovar/464/464-01-600x600.jpg",
+    "name": "Водонепроницаемый органайзер для путешествий Weekade Blue",
+    "price": "$800.05",
+    "isActiveSale": true,
+    "sale": 67
+  },
+  {
+    "id": 4,
+    "picture": "https://priparade.ru/image/cache/catalog/tovar/446/446-01-600x600.jpg",
+    "name": "Мусорка в авто",
+    "price": "$893.90",
+    "isActiveSale": false,
+    "sale": 1
+  },
+  {
+    "id": 5,
+    "picture": "https://priparade.ru/image/catalog/tovar/1500-1999/1971/1971-1.jpg",
+    "name": "Обложка для паспорта \"Multi Passport\"",
+    "price": "$398.04",
+    "isActiveSale": true,
+    "sale": 58
+  },
+  {
+    "id": 6,
+    "picture": "https://priparade.ru/image/catalog/tovar/4000-4499/4004/4004-1.jpg",
+    "name": "Кошелек женский \"Fray\" арт:4004",
+    "price": "$582.67",
+    "isActiveSale": true,
+    "sale": 31
+  },
+  {
+    "id": 7,
+    "picture": "https://priparade.ru/image/cache/catalog/tovar/714/714-01-600x600.jpg",
+    "name": "Органайзер для блокнота Better Together Green",
+    "price": "$419.30",
+    "isActiveSale": false,
+    "sale": 43
+  },
+  {
+    "id": 8,
+    "picture": "https://priparade.ru/image/catalog/tovar/1500-1999/1948/1948-1.jpg",
+    "name": "Магнит с глазками \"Почему ты на диету хочешь сесть?\"",
+    "price": "$978.62",
+    "isActiveSale": false,
+    "sale": 12
+  },
+  {
+    "id": 9,
+    "picture": "https://priparade.ru/image/cache/catalog/tovar/3500-3999/3729/3729-1-600x600.jpg",
+    "name": "Конструктор автомобиль \"Hot Rod HR3\"",
+    "price": "$561.29",
+    "isActiveSale": false,
+    "sale": 38
+  },
+  {
+    "id": 10,
+    "picture": "https://priparade.ru/image/catalog/tovar/2000-2499/2064/2064-1.jpg",
+    "name": "Ручка в подарочном футляре \"Россия\"",
+    "price": "$257.95",
+    "isActiveSale": true,
+    "sale": 48
+  },
+  {
+    "id": 11,
+    "picture": "https://priparade.ru/image/catalog/tovar/4000-4499/4076/4076-1.jpg",
+    "name": "Кошелек женский \"Fray\" арт:4076",
+    "price": "$530.26",
+    "isActiveSale": true,
+    "sale": 47
+  },
+  {
+    "id": 12,
+    "picture": "https://priparade.ru/image/catalog/tovar/4000-4499/4052/4052-1.jpg",
+    "name": "Кошелек женский арт:4052",
+    "price": "$642.46",
+    "isActiveSale": true,
+    "sale": 40
+  },
+  {
+    "id": 13,
+    "picture": "https://priparade.ru/image/catalog/tovar/4000-4499/4052/4052-1.jpg",
+    "name": "Кошелек женский арт:4052",
+    "price": "$106.14",
+    "isActiveSale": false,
+    "sale": 67
+  },
+  {
+    "id": 14,
+    "picture": "https://priparade.ru/image/cache/catalog/tovar/464/464-01-600x600.jpg",
+    "name": "Водонепроницаемый органайзер для путешествий Weekade Blue",
+    "price": "$209.22",
+    "isActiveSale": true,
+    "sale": 60
+  },
+  {
+    "id": 15,
+    "picture": "https://priparade.ru/image/catalog/tovar/1500-1999/1644/1644-1.jpg",
+    "name": "Брелок \"Золотой учитель\"",
+    "price": "$328.18",
+    "isActiveSale": false,
+    "sale": 18
+  },
+  {
+    "id": 16,
+    "picture": "https://priparade.ru/image/catalog/tovar/1000-1499/1326/1326-1.jpg",
+    "name": "Ручка подарочная \"Директор\"",
+    "price": "$411.81",
+    "isActiveSale": true,
+    "sale": 66
+  },
+  {
+    "id": 17,
+    "picture": "https://priparade.ru/image/cache/catalog/tovar/446/446-01-600x600.jpg",
+    "name": "Мусорка в авто",
+    "price": "$384.25",
+    "isActiveSale": false,
+    "sale": 43
+  },
+  {
+    "id": 18,
+    "picture": "https://priparade.ru/image/cache/catalog/tovar/465/465-01-600x600.jpg",
+    "name": "Водонепроницаемый органайзер для путешествий Weekade Navy",
+    "price": "$99.63",
+    "isActiveSale": true,
+    "sale": 9
+  },
+  {
+    "id": 19,
+    "price": "$227.07",
+    "isActiveSale": false,
+    "sale": 68
+  },
+  {
+    "id": 20,
+    "picture": "https://priparade.ru/image/catalog/tovar/1500-1999/1971/1971-1.jpg",
+    "name": "Обложка для паспорта \"Multi Passport\"",
+    "price": "$658.41",
+    "isActiveSale": true,
+    "sale": 27
+  },
+  {
+    "id": 21,
+    "picture": "https://priparade.ru/image/catalog/tovar/1500-1999/1604/1604.jpg",
+    "name": "Свечи для торта \"Смайлики\"",
+    "price": "$625.06",
+    "isActiveSale": true,
+    "sale": 22
+  },
+  {
+    "id": 22,
+    "picture": "https://priparade.ru/image/catalog/tovar/4000-4499/4004/4004-1.jpg",
+    "name": "Кошелек женский арт:4004",
+    "price": "$685.96",
+    "isActiveSale": false,
+    "sale": 35
+  },
+  {
+    "id": 23,
+    "picture": "https://priparade.ru/image/catalog/tovar/2000-2499/2028/2028-1.jpg",
+    "name": "Набор столовых приборов \"Капелька\" (24 предмета)",
+    "price": "$313.95",
+    "isActiveSale": false,
+    "sale": 64
+  },
+  {
+    "id": 24,
+    "picture": "https://priparade.ru/image/cache/catalog/tovar/376/376-01-600x600.jpg",
+    "name": "Органайзер для документов Travel Time Pink",
+    "price": "$931.46",
+    "isActiveSale": false,
+    "sale": 23
+  },
+  {
+    "id": 25,
+    "picture": "https://priparade.ru/image/catalog/tovar/1500-1999/1948/1948-1.jpg",
+    "name": "Магнит с глазками \"Почему ты на диету хочешь сесть?\"",
+    "price": "$386.28",
+    "isActiveSale": true,
+    "sale": 68
+  },
+  {
+    "id": 26,
+    "picture": "https://priparade.ru/image/catalog/tovar/2000-2499/2085/2085.jpg",
+    "name": "Автомобильный кипятильник 12V",
+    "price": "$644.54",
+    "isActiveSale": true,
+    "sale": 35
+  },
+  {
+    "id": 27,
+    "picture": "https://priparade.ru/image/cache/catalog/tovar/3500-3999/3729/3729-1-600x600.jpg",
+    "name": "Конструктор автомобиль \"Hot Rod HR3\"",
+    "price": "$632.63",
+    "isActiveSale": false,
+    "sale": 30
+  },
+  {
+    "id": 28,
+    "picture": "https://priparade.ru/image/catalog/tovar/4000-4499/4098/4098-1.jpg",
+    "name": "Кошелек женский арт:4098",
+    "price": "$904.37",
+    "isActiveSale": false,
+    "sale": 14
+  },
+  {
+    "id": 29,
+    "picture": "https://priparade.ru/image/catalog/tovar/831/831-01.jpg",
+    "name": "Справка - отмазка \"Непредвиденные обстоятельства\"",
+    "price": "$241.86",
+    "isActiveSale": true,
+    "sale": 30
+  },
+  {
+    "id": 30,
+    "picture": "https://priparade.ru/image/catalog/tovar/992/992-01.jpg",
+    "name": "Головоломка \"Puzzles de steel\" №25",
+    "price": "$946.08",
+    "isActiveSale": true,
+    "sale": 51
+  },
+  {
+    "id": 31,
+    "picture": "https://priparade.ru/image/cache/catalog/tovar/553/553-01-600x600.jpg",
+    "name": "Кошелек DONBOOK Yellow",
+    "price": "$330.30",
+    "isActiveSale": true,
+    "sale": 23
+  },
+  {
+    "id": 32,
+    "picture": "https://priparade.ru/image/catalog/tovar/2500-2999/2607/2607-1.jpg",
+    "name": "Набор для смелых взрослых игр",
+    "price": "$160.60",
+    "isActiveSale": true,
+    "sale": 3
+  },
+  {
+    "id": 33,
+    "picture": "https://priparade.ru/image/cache/catalog/tovar/515/515-01-600x600.jpg",
+    "name": "Мусорка в авто Glass Waste",
+    "price": "$114.68",
+    "isActiveSale": true,
+    "sale": 13
+  }
+]
