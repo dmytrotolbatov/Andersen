@@ -1,23 +1,146 @@
+body {
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+input {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#inputSubmit {
+    cursor: pointer;
+    background-color: #f7f7f7;
+    width: 75px;
+}
+
+button {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #96c4cf;
+    color: white;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
 #result {
-    margin-top: 50px;
+    margin: 0;
+    padding: 0;
 }
 
 .item {
-    /*width: 50px;
-    height: 50px;*/
     display: inline-block;
+    width: 200px;
+    height: 200px;
     background: white;
-    border: solid 1px red;
     margin: 5px;
+    padding: 15px;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.item p {
+    font-size: medium;
+}
+
+.item h3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
 }
 
 .row {
     display: block;
     margin: 5px;
-    /*line-height: 0;*/
 }
 
 p {
     font-size: x-small;
+}
+
+.sale {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: pink;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+h5 {
+display: none;
+}
+
+#biggestSales {
+    display: block;
+}
+
+#watched {
+    display: none;
+}
+
+footer {
+    background-color: #d4e9ec;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+footer .item p {
+    font-size: small;
+}
+
+footer .item {
+    width: 250px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+footer .item .sale {
+    font-size: small;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 20%;
+}
+
+footer .item h3 {
+    position: absolute;
+    bottom: 0;
+    right: 40%;
+    margin: 5px;
+    font-size: medium;
+    color: #9ca9af;
+}
+
+footer .item img {
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+
+footer h2 {
+    padding-top: 20px;
+}
+
+footer #buttonSale {
+    color: #2a5768;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+footer #buttonWatched {
+    color: #73969c;
+    font-weight: 100;
+    cursor: pointer;
 }
 

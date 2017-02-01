@@ -6,22 +6,23 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-<div>
+
+<div id="shop">
     <form onsubmit="search(event)">
-        <input type="text" placeholder="Найди то, что ты точно подаришь" id="input">
-        <input type="submit" value="Найти">
+        <input type="text" placeholder="Найди то, что ты точно подаришь" id="input" size="100">
+        <input type="submit" value="Найти" id="inputSubmit">
     </form>
 
-    <div id="result">
-
-    </div>
+    <div id="result"></div>
 
     <button id="buttonMore">Посмотреть еще</button>
+
+    <footer>
+        <h2><span id="buttonSale">Акции</span> | <span id="buttonWatched">Вы смотрели</span></h2>
+        <div id="biggestSales"></div>
+        <div id="watched"></div>
+    </footer>
 </div>
-
-
-
-
 
 <script src="app.js"></script>
 </body>
