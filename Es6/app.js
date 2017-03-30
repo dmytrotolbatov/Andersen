@@ -195,6 +195,7 @@
 // };
 //
 // console.log(totalMachineValue());
+//let totalValue = inventory.filter(item => item.type == "machine").reduce((sum, order) => sum + order.value, 0);
 
 ///////////////////////////////////////////////////////////////
 
